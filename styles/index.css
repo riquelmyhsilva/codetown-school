@@ -12,29 +12,30 @@ body {
 /* Header */
 header {
     height: 100px;
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinha verticalmente os elementos */
-    justify-content: space-between; /* Empurra logo para a esquerda e nav para a direita */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: solid 2px #3c90ff8a;
 }
 
 #logo img {
     width: 304px;
     margin-left: 250px;
-    margin-right: auto; /* Empurra os links para a direita */
+    margin-right: auto;
 }
 
 /* nav */
 
 ul#nav {
-    display: flex; /* Links em linha */
-    gap: 20px; /* Espaço entre links */
+    display: flex;
+    gap: 20px;
     list-style: none;
 }
 
 ul#nav a {
     font-size: 1em;
     text-decoration: none;
+    font-weight: 500;
     color: #131313;
     padding: 10px 15px;
     transition: color 0.3s ease;
@@ -57,7 +58,7 @@ ul#nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: calc(100vh - 200px); /* Garante que o conteúdo ocupe o espaço restante abaixo do header */
+    height: calc(100vh - 100px);
 }
 
 .content h1{
@@ -71,18 +72,19 @@ ul#nav a:hover {
 }
 
 .content button {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 38px;
+    font-size: 1.5em;
     border: none;
     background-color: #3C90FF;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
+    transition: box-shadow 0.3s ease;
 }
 
 .content button:hover {
-    background-color: #297acc;
+    box-shadow: 0 0 15px 1px #3C90FF, 0 0 15px 1px #3C90FF inset;
 }
 
 .content b {
@@ -92,26 +94,35 @@ ul#nav a:hover {
 footer {
     width: 100%;
     background-color: #131313;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    height: 120px;
+    color: #D9D9D9;
+    padding: 50px 50px 30px;
+    height: 227px;
+}
+
+#footer-left {
+    height: 100%;
+    float: left;
+}
+
+#footer-right{
+    height: 100%;
+    float: right;
 }
 
 .footer-links ul {
+    float: left;
+    position: relative;
     list-style: none;
-    padding: 0;
+    padding: 0 0 20px 0;
 }
 
 .footer-links li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .footer-links a {
     text-decoration: none;
-    color: white;
+    color: #D9D9D9;
     font-size: 0.9em;
     transition: color 0.3s ease;
 }
@@ -121,33 +132,44 @@ footer {
 }
 
 .footer-logo img {
-    width: 150px;
+    float: left;
 }
 
 .footer-info {
+    width: 100%;
+    height: 100%;
     text-align: right;
 }
 
 .language-button {
+    width: 150px;
     background: none;
-    border: 1px solid white;
-    padding: 5px 10px;
-    color: white;
-    font-size: 0.9em;
+    border: 2px solid #D9D9D9;
+    padding: 0;
+    color: #D9D9D9;
+    font-size: 1em;
+    font-weight: 500;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
-    margin-bottom: 5px;
+    margin-bottom: 80px;
+    padding: 10px 14px;
 }
 
-.language-button:hover {
-    background-color: #3C90FF;
+.language-button img{
+    float: left; 
+}
+
+.footer-info .language-button p{
+    padding: 0;
+    float: right;
+    letter-spacing: 1.5px;
+    position: relative;
 }
 
 .footer-info p {
     margin: 0;
-    font-size: 0.85em;
-    margin-top: 5px;
+    font-size: 1em;
 }
 
 
