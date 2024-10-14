@@ -147,14 +147,13 @@ footer {
     width: 150px;
     background: none;
     border: 2px solid #d9d9d9be;
-    padding: 0;
     color: #d9d9d9be;
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
+    margin-bottom: 80px;
     border-radius: 10px;
     transition: 0.3s ease;
-    margin-bottom: 80px;
     padding: 10px 14px;
 }
 
@@ -179,5 +178,42 @@ footer {
     margin: 0;
     font-size: 1em;
 }
+
+/* Dropdown oculto por padrão */
+.language-dropdown {
+    display: none;
+    background-color: #131313;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    position: relative;
+    top: -142px;
+    left: 46px;
+    z-index: 1000;
+    width: 150px;
+    padding: 10px 14px;
+    letter-spacing: 1.2px;
+}
+
+
+.language-dropdown ul {
+    list-style: none;
+    margin: 0;
+}
+
+.language-dropdown li {
+    margin-bottom: 10px;
+}
+
+.language-dropdown a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.language-dropdown a:hover {
+    color: #3C90FF;
+}
+
 
 
