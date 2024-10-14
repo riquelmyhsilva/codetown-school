@@ -186,11 +186,12 @@ footer {
     border: 2px solid #D9D9D9;
     border-radius: 10px;
     position: relative;
+    font-weight: 500;
     top: -142px;
     left: 46px;
     z-index: 1000;
     width: 150px;
-    padding: 10px 14px;
+    padding: 8px 14px;
     letter-spacing: 1.2px;
 }
 
